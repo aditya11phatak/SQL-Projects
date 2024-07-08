@@ -148,31 +148,7 @@ on d.duration_id = t.duration_id
 group by d.duration_id
 order by d.duration desc
 limit 1
-
--- which driver , customer pair had more orders
-
-
--- search to estimate rate
-
-
--- estimate to search for quote rates
-
-
--- quote acceptance rate
-
-
--- quote to booking rate
-
-
--- booking cancellation rate
-
-
--- conversion rate
-
-
--- which area got highest trips in which duration
-
-
+	
 -- which area got the highest fares, cancellations,trips,
 with trips as (select td.location_id,a.assembly,count(*) as Highest_no_of_trips
 from trips t
